@@ -66,5 +66,21 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.opacity = '1';
     });
 
-    // Remove modal functionality since links now navigate to separate pages
+    // Initialize theme
+    initializeTheme();
 });
+
+// Theme toggle functionality
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+}
+
+function initializeTheme() {
+    // Check for saved theme preference or default to 'light'
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+}

@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - Gym Diary</title>
     <link rel="stylesheet" href="policy-styles.css">
+    <script>
+        // Initialize theme immediately to prevent flash
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
 </head>
 <body>
     <div class="container">
