@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.7;
+    color: #2c3e50;
+    background: #f8f9fa;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    min-height: 100vh;
+}
+
+header {
+    background: transparent;
+    color: #2c3e50;
+    padding: 60px 40px 40px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 40px;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.last-updated {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.content {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.policy-section {
+    margin-bottom: 30px;
+}
+
+.policy-section h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.policy-section p {
+    color: #5a6c7d;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.policy-section ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.policy-section li {
+    color: #5a6c7d;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.policy-section li strong {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.section-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #e9ecef, transparent);
+    margin: 40px 0;
+}
+
+.contact-email {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-email a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: 2px solid #667eea;
+    border-radius: 25px;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.contact-email a:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-1px);
+}
+
+.footer-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #e9ecef, transparent);
+    margin: 60px auto 0;
+    max-width: 800px;
+}
+
+footer {
+    background: transparent;
+    color: #5a6c7d;
+    padding: 40px;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-link-container {
+    flex-shrink: 0;
+}
+
+.back-link {
+    color: #667eea;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    background: #f8f9fa;
+    transform: translateY(-1px);
+}
+
+.footer-info {
+    text-align: right;
+    flex-grow: 1;
+    margin-left: 30px;
+}
+
+.footer-info p {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #7f8c8d;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #667eea;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        box-shadow: none;
+    }
+    
+    header {
+        padding: 30px 20px;
+    }
+    
+    .header-content h1 {
+        font-size: 2rem;
+    }
+    
+    .content {
+        padding: 30px 20px;
+    }
+    
+    .policy-section h2 {
+        font-size: 1.3rem;
+    }
+    
+    footer {
+        padding: 20px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .footer-info {
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px 15px;
+    }
+    
+    .header-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .content {
+        padding: 20px 15px;
+    }
+    
+    .back-link {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

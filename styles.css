@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #f8f9fa;
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left Sidebar Styles */
+.sidebar {
+    width: 484px;
+    background: white;
+    padding: 40px 40px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 0 20px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.sidebar-content {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.app-icon {
+    margin-bottom: 30px;
+}
+
+.app-icon-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.app-icon-image:hover {
+    transform: scale(1.05);
+}
+
+.app-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #0d1117;
+    letter-spacing: -0.02em;
+}
+
+.diary-text {
+    color: #FF522F;
+}
+
+
+.description {
+    margin-bottom: 10px;
+}
+
+.description p {
+    color: #24292f;
+    font-size: 1rem;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.app-store-button {
+    margin-bottom: 40px;
+}
+
+.store-link {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.store-link:hover {
+    transform: scale(1.05);
+}
+
+.app-store-badge {
+    height: 50px;
+    width: auto;
+}
+
+.qr-section {
+    margin: 30px 0;
+    text-align: left;
+}
+
+
+.qr-code {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+}
+
+.qr-code:hover {
+    transform: scale(1.05);
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.link {
+    color: #24292f;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+.link:hover {
+    color: #667eea;
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.footer-text p {
+    color: #24292f;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.author-link {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.author-link:hover {
+    color: #5a5fcf;
+}
+
+
+/* Right Content Area */
+.content {
+    flex: 1;
+    margin-left: 484px;
+    background: #f8f9fa;
+}
+
+.content-scroll {
+    height: 100vh;
+    overflow-y: auto;
+    padding: 60px 40px;
+}
+
+.app-showcase {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.screenshot-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    gap: 60px;
+}
+
+.screenshot-container:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.phone-mockup {
+    flex-shrink: 0;
+    width: 250px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-frame {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1));
+    transition: transform 0.3s ease;
+}
+
+.phone-frame:hover {
+    transform: scale(1.02);
+}
+
+.screenshot-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.screenshot-text h2,
+.screenshot-text h3 {
+    font-size: 1.8rem;
+    color: #0d1117;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.screenshot-text p {
+    color: #24292f;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 424px;
+        padding: 30px;
+    }
+    
+    .content {
+        margin-left: 424px;
+    }
+    
+    .content-scroll {
+        padding: 40px 30px;
+    }
+    
+    .screenshot-container {
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+    
+    .phone-mockup {
+        width: 220px;
+        height: 440px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        padding: 30px 20px;
+        text-align: center;
+    }
+    
+    .content {
+        margin-left: 0;
+    }
+    
+    .content-scroll {
+        height: auto;
+        padding: 40px 20px;
+    }
+    
+    .screenshot-container {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .phone-mockup {
+        width: 200px;
+        height: 400px;
+    }
+    
+    .screenshot-text h2,
+    .screenshot-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .screenshot-text p {
+        font-size: 1rem;
+    }
+    
+    .app-title {
+        font-size: 2rem;
+    }
+    
+    .qr-section {
+        text-align: center;
+    }
+    
+    .qr-code {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .app-store-button {
+        text-align: center;
+    }
+    
+    .app-store-badge {
+        height: 45px;
+    }
+    
+    .bottom-footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .links {
+        justify-content: center;
+    }
+    
+    .sidebar-content {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        padding: 20px;
+    }
+    
+    .sidebar-content {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .app-title {
+        font-size: 1.8rem;
+    }
+    
+    .phone-mockup {
+        width: 180px;
+        height: 360px;
+    }
+    
+    .content-scroll {
+        padding: 30px 15px;
+    }
+    
+    .qr-code {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .app-store-badge {
+        height: 40px;
+    }
+    
+    .app-icon-image {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Additional styles */
+.content-scroll {
+    scroll-behavior: smooth;
+}
+
+/* Hover effects */
+.app-icon-image:hover,
+.qr-code:hover,
+.store-link:hover {
+    transform: scale(1.05);
+}
+
+/* Custom scrollbar */
+.content-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.content-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.content-scroll::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+.content-scroll::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}

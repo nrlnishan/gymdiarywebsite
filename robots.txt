@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://gymdiary.app/sitemap.xml
+
+# Block common bot resources
+Disallow: /assets/
+Allow: /assets/app-icon.png
+Allow: /assets/gym-diary-qr-code-ios.png
