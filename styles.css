@@ -120,7 +120,7 @@ body {
     width: 80px;
     height: 80px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 0 0 40px rgba(255, 82, 47, 0.3);
     transition: transform 0.2s ease;
 }
 
@@ -410,6 +410,22 @@ body {
         width: 35px;
         height: 35px;
     }
+    
+    .sun-icon {
+        display: block;
+    }
+
+    .moon-icon {
+        display: none;
+    }
+
+    [data-theme="dark"] .sun-icon {
+        display: none;
+    }
+
+    [data-theme="dark"] .moon-icon {
+        display: block;
+    }
 }
 
 @media (max-width: 480px) {
@@ -452,6 +468,22 @@ body {
     .theme-btn {
         width: 32px;
         height: 32px;
+    }
+    
+    .sun-icon {
+        display: block;
+    }
+
+    .moon-icon {
+        display: none;
+    }
+
+    [data-theme="dark"] .sun-icon {
+        display: none;
+    }
+
+    [data-theme="dark"] .moon-icon {
+        display: block;
     }
 }
 
