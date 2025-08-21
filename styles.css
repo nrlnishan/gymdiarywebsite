@@ -193,7 +193,7 @@ body {
 }
 
 .link {
-    color: var(--color-secondary2);
+    color: var(--color-secondary1);
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 400;
@@ -219,7 +219,7 @@ body {
 }
 
 .author-link {
-    color: #667eea;
+    color: var(--color-secondary1);
     text-decoration: none;
     transition: color 0.2s ease;
 }
