@@ -1,6 +1,12 @@
 {
   "ios": {
     "version": "2.2.2",
-    "timestamp": "2025-09-07T12:51:20Z"
+    "app_message": {
+      "title": "New app update available",
+      "body": "Please update the app to the latest version for the best experience.",
+      "type": "update"
+    },
+    "timestamp": "2025-09-07T12:51:20Z",
+    "types": ["update", "offer", "review"]
   }
 }
