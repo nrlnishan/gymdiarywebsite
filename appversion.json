@@ -1,6 +1,6 @@
 {
   "ios": {
-    "version": "2.2.2",
+    "version": "2.2.4",
     "app_message": {
       "title": "New app update available",
       "body": "Please update the app to the latest version for the best experience.",
